@@ -68,21 +68,17 @@ public class CherryTreeMod {
  
 
 		
-@SubscribeEvent
  private void setup(final FMLCommonSetupEvent event)
  {
     
  }
 
 
-@SubscribeEvent
  private void doClientStuff(final FMLClientSetupEvent event) 
  {
     
  }
 
- 
-@SubscribeEvent
  public void onServerStarting(FMLServerStartingEvent event) 
  {
      
