@@ -56,7 +56,7 @@ public class CherryTreeMod {
 		final IForgeRegistry<Item> registry = event.getRegistry();
 
 		BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
-			final Item.Properties properties = new Item.Properties().group(MMItemGroup.instance);
+			final Item.Properties properties = new Item.Properties().group(MMsItemGroup.instance);
 			final BlockItem blockItem = new BlockItem(block, properties);
 			blockItem.setRegistryName(block.getRegistryName());
 			registry.register(blockItem);
@@ -88,10 +88,10 @@ public class CherryTreeMod {
      
  }
 
-	public static class MMItemGroup extends ItemGroup {
-		public static final ItemGroup instance = new MMItemGroup(ItemGroup.GROUPS.length, "MiniMod series");
+	public static class MMsItemGroup extends ItemGroup {
+		public static final ItemGroup instance = new MMsItemGroup(ItemGroup.GROUPS.length, "MiniMod series");
 
-		private MMItemGroup(int index, String label) {
+		private MMsItemGroup(int index, String label) {
 			super(index, label);
 		}
 		
