@@ -3,6 +3,8 @@ package com.okid0kii.mmcherrytree;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.okid0kii.mmcherrytree.init.BlockInit;
+import com.okid0kii.mmcherrytree.init.ItemInit;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -14,40 +16,38 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.common.Mod;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 
-import com.okid0kii.mmcherrytree.init.BlockInit;
-import com.okid0kii.mmcherrytree.init.ItemInit;
-
 
 @Mod("mmcherrytree")
-public class CherryTreeMod
-{
+@Mod.EventBusSubscriber(modid = CherryTreeMod.MOD_ID, bus = Bus.MOD)
 
- private static final Logger LOGGER = LogManager.getLogger();
+public class CherryTreeMod {
+
+	public static final Logger LOGGER = LogManager.getLogger();
+ 	public static final String MOD_ID = "mmcherrytree";
+	public static CherryTreeMod instance;
  
- public static final String MOD_ID = "mmcherrytree";
- public static CherryTreeMod instance;
- 
 
- public CherryTreeMod() {
-		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-		modEventBus.addListener(this::setup);
-		modEventBus.addListener(this::doClientStuff);
+		public CherryTreeMod() {
+			final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+			modEventBus.addListener(this::setup);
+			modEventBus.addListener(this::doClientStuff);
 
-		ItemInit.ITEMS.register(modEventBus);
-		BlockInit.BLOCKS.register(modEventBus);
-	
+			ItemInit.ITEMS.register(modEventBus);
+			BlockInit.BLOCKS.register(modEventBus);
+		
 
-		instance = this;
-		MinecraftForge.EVENT_BUS.register(this);
+			instance = this;
+			MinecraftForge.EVENT_BUS.register(this);
 	}
  
 
