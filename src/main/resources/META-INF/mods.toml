@@ -1,32 +1,52 @@
-modLoader="javafml"
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
 
-loaderVersion="[31,)"
+modLoader="javafml" #mandatory
 
-issueTrackerURL="http://my.issue.tracker/"
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 
-[[mods]]
+# A URL to refer people to when problems occur with this mod
+issueTrackerURL="http://my.issue.tracker/" #optional
 
-modId="mmcherrytree"
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
 
-version="1.0"
+# The modid of the mod
+modId="mmcherrytree" #mandatory
 
-displayName="MMs Cherry Tree"
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+version="1.0" #mandatory
 
-updateJSONURL="http://myurl.me/"
+ # A display name for the mod
+displayName="MMs Cherry Tree" #mandatory
 
-displayURL="http://example.com/"
+# A URL to query for updates for this mod. See the JSON update specification <here>
+updateJSONURL="http://myurl.me/" #optional
 
-logoFile="examplemod.png"
+# A URL for the "homepage" for this mod, displayed in the mod UI
+displayURL="http://example.com/" #optional
 
-credits="Thanks to TurtyWurty - Mr Pineapple - Vazkii"
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="examplemod.png" #optional
 
-authors="okid0kii"
+# A text field displayed in the mod UI
+credits="Thanks to TurtyWurty - Mr Pineapple - Vazkii" #optional
 
+# A text field displayed in the mod UI
+authors="okid0kii" #optional
+
+# The description text for the mod (multi line!) (#mandatory)
 description='''
-	Just an other mod for the Mini Mod Series
+Just a Cherry Tree for MiniMod series
 '''
 
-[[dependencies.mmcherrytree]] #optional
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.examplemod]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -37,7 +57,8 @@ description='''
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-
+    
+# Here's another dependency
 [[dependencies.mmcherrytree]]
     modId="minecraft"
     mandatory=true
