@@ -3,13 +3,14 @@ package com.okid0kii.mmcherrytree.objects.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.LogBlock;
+
 import net.minecraft.block.material.MaterialColor;
 
 public class LogBlocks extends LogBlock {
 
 	
 	
-	public LogBlocks(MaterialColor verticalColorIn, Properties properties) {
+	public LogBlocks (MaterialColor verticalColorIn, Properties properties) {
 		super(verticalColorIn, properties);
 		
 
