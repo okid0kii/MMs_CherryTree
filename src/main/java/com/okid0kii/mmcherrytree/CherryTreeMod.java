@@ -93,12 +93,11 @@ public class CherryTreeMod {
 		
 	@Override
 	public ItemStack createIcon() {
-		return new ItemStack(BlockInit.CHERRY_LOG.get());
+		return new ItemStack(ItemInit.CHERRY_FRUIT.get());
 	}
   }
 }
 
-//WHYYYYYYYYY ? :'(
 
 
 
