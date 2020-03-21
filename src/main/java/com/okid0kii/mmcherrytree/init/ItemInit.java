@@ -2,7 +2,7 @@ package com.okid0kii.mmcherrytree.init;
 
 import com.okid0kii.mmcherrytree.CherryTreeMod;
 import com.okid0kii.mmcherrytree.CherryTreeMod.MMsItemGroup;
-import com.okid0kii.mmcherrytree.objects.items.FoodItem;
+import com.okid0kii.mmcherrytree.objects.items.FoodItems;
 
 import net.minecraft.item.Item;
 
@@ -14,7 +14,7 @@ public class ItemInit {
 	 
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<> (ForgeRegistries.ITEMS, CherryTreeMod.MOD_ID);
 	
-	public static final RegistryObject<Item> CHERRY_FRUIT = ITEMS.register("cherry", () -> new Item(new Item.Properties().group(MMsItemGroup.instance).food(FoodItem.CHERRY_FRUIT)));
+	public static final RegistryObject<Item> CHERRY_FRUIT = ITEMS.register("cherry", () -> new Item(new Item.Properties().group(MMsItemGroup.instance).food(FoodItems.CHERRY_FRUIT)));
 			
 
 }
