@@ -1,6 +1,7 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "mmcherrytree:blocks/cherry_log"
-    }
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "mmcherrytree:blocks/cherry_log_top",
+		"side": "mmcherrytree:blocks/cherry_log"
+	}
 }
