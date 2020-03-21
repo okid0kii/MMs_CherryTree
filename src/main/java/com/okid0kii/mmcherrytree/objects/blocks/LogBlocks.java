@@ -15,6 +15,6 @@ public class LogBlocks extends LogBlock {
 
 	}
 
-	public static final LogBlock CHERRY_LOG = new LogBlocks(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG));
+	public static final LogBlocks CHERRY_LOG = new LogBlocks(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG));
 	
 }
