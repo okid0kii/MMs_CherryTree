@@ -11,6 +11,7 @@ public class LogBlocks extends LogBlock {
 	
 	public LogBlocks(MaterialColor verticalColorIn, Properties properties) {
 		super(verticalColorIn, properties);
+		
 
 	}
 
