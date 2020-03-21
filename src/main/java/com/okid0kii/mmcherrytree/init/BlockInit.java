@@ -17,4 +17,3 @@ public class BlockInit {
 	
 	public static final RegistryObject<Block> CHERRY_LOG = BLOCKS.register("cherry_log", () -> new Block(Block.Properties.create(Material.WOOD)));
 }
-
