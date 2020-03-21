@@ -1,5 +1,8 @@
 {
-    "variants": {
-        "": { "model": "mmcherrytree:block/cherry_log" }
-    }
+	"variants": {
+		"axis=y":  { "model": "mmcherrytree:block/cherry_log" },
+		"axis=z":   { "model": "mmcherrytree:block/cherry_log", "x": 90 },
+		"axis=x":    { "model": "mmcherrytree:block/cherry_log", "x": 90, "y": 90 }
+	}
 }
+
