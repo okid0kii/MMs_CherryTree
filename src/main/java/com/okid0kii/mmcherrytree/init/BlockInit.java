@@ -20,7 +20,11 @@ public class BlockInit {
 	
 	public static final RegistryObject<Block> CHERRY_LOG = BLOCKS.register("cherry_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
 	
-	public static final RegistryObject<Block> CHERRY_FENCE = BLOCKS.register("cherry_fence", () -> new FenceBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD)));
+	public static final RegistryObject<Block> CHERRY_PLANKS = BLOCKS.register("cherry_planks", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
+	
+	public static final RegistryObject<Block> CHERRY_FENCE = BLOCKS.register("cherry_fence", () -> new FenceBlock(Block.Properties.from(Blocks.OAK_FENCE)));
+	
+	//public static final RegistryObject<Block> CHERRY_FENCE = BLOCKS.register("cherry_fence", () -> new FenceBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD)));
 	
 
 	//public static final RegistryObject<Block> DEF = BLOCKS.register("def", () -> new Block(Block.Properties.create(Material.WOOD)));
