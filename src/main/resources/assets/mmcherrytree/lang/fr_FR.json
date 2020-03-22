@@ -5,13 +5,16 @@
 	
 //BLOCKS//	
 	"block.mmcherrytree.cherry_log": "Bûche de Cerisier",
-	"block.mmcherrytree.cherry_log_fence": "Barrière en bois de Cerisier",
+	"block.mmcherrytree.cherry_wood_fence": "Barrière en bois de Cerisier",
 	"block.mmcherrytree.cherry_fence": "Barrière de Cerisier",
 	"block.mmcherrytree.stripped_cherry_log": "Bûche de Cerisier écorcé",
 	"block.mmcherrytree.stripped_cherry_wood": "Bois de Cerisier écorcé",
 	"block.mmcherrytree.cherry_wood": "Bois de Cerisier",
 	"block.mmcherrytree.cherry_planks": "Planche de Cerisier",
-
+	"block.mmcherrytree.cherry_slab": "Dalle en Cerisier",
+	"block.mmcherrytree.cherry_wood_slab": "Dalle en bois de Cerisier",
+	"block.mmcherrytree.cherry_stairs": "Escalier de Cerisier",
+	"block.mmcherrytree.cherry_wood_stairs": "Escalier en bois de Cerisier",
 
 //ITEMS//
 	"item.mmcherrytree.cherry_fruit": "Cerise"
