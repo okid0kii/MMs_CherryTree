@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "mmcherrytree:block/cherry_wood_slab" },
+        "type=top": { "model": "mmcherrytree:block/cherry_wood_slab_top" },
+        "type=double": { "model": "mmcherrytree:block/cherry_wood" }
+    }
+}
