@@ -1,8 +1,13 @@
 {
+//OTHERS//	
 	"itemGroup.minimodseries": "MiniMod series",
 	
-	"block.mmcherrytree.cherry_log": "Cherry Log",
 	
+//BLOCKS//	
+	"block.mmcherrytree.cherry_log": "Cherry Log",
+
+
+//ITEMS//
 	"item.mmcherrytree.cherry": "Cherry"
 
 }
