@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "mmcherrytree:blocks/cherry_log",
+        "top": "mmcherrytree:blocks/cherry_log",
+        "side": "mmcherrytree:blocks/cherry_log"
+    }
+}
