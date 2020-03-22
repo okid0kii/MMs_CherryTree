@@ -27,6 +27,8 @@ public class BlockInit {
 //BLOCKS "Simple Block"
 	public static final RegistryObject<Block> CHERRY_WOOD = BLOCKS.register("cherry_wood", () -> new Block(Block.Properties.from(Blocks.OAK_WOOD)));
 	
+	public static final RegistryObject<Block> STRIPPED_CHERRY_WOOD = BLOCKS.register("stripped_cherry_wood", () -> new Block(Block.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
+	
 	public static final RegistryObject<Block> CHERRY_PLANKS = BLOCKS.register("cherry_planks", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
 	
 //DECORATION BLOCKS
