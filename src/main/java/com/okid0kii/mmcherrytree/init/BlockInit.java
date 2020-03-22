@@ -18,7 +18,6 @@ public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<> (ForgeRegistries.BLOCKS, CherryTreeMod.MOD_ID);
 	
 	public static final RegistryObject<Block> CHERRY_LOG = BLOCKS.register("cherry_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
-	
-	//public static final RegistryObject<Block> CHERRY_LOG = BLOCKS.register("cherry_log", () -> new LogBlock(Block.Properties.from(LogBlocks.CHERRY_LOG)));
-	public static final RegistryObject<Block> DEF = BLOCKS.register("def", () -> new Block(Block.Properties.create(Material.WOOD)));
+
+	//public static final RegistryObject<Block> DEF = BLOCKS.register("def", () -> new Block(Block.Properties.create(Material.WOOD)));
 }
