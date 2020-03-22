@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-	"mmcherrytree:cherry_fence"
+	"mmcherrytree:cherry_fence",
+	"mmcherrytree:cherry_log_fence"
+	
   ]
 }
