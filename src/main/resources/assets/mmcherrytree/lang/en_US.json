@@ -5,13 +5,16 @@
 	
 //BLOCKS//	
 	"block.mmcherrytree.cherry_log": "Cherry Log",
-	"block.mmcherrytree.cherry_log_fence": "Cherry Log Fence",
+	"block.mmcherrytree.cherry_wood_fence": "Cherry Wood Fence",
 	"block.mmcherrytree.cherry_fence": "Cherry Fence",
 	"block.mmcherrytree.stripped_cherry_log": "Stripped Cherry Log",
 	"block.mmcherrytree.stripped_cherry_wood": "Stripped Cherry Wood",
 	"block.mmcherrytree.cherry_wood": "Cherry Wood",
 	"block.mmcherrytree.cherry_planks": "Cherry Planks",
-
+	"block.mmcherrytree.cherry_slab": "Cherry Slab",	
+	"block.mmcherrytree.cherry_wood_slab": "Cherry Wood Slab",
+	"block.mmcherrytree.cherry_stairs": "Cherry Stairs",
+	"block.mmcherrytree.cherry_wood_stairs": "Cherry Wood Stairs",
 
 //ITEMS//
 	"item.mmcherrytree.cherry_fruit": "Cherry"
