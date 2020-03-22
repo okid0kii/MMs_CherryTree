@@ -6,9 +6,11 @@
 //BLOCKS//	
 	"block.mmcherrytree.cherry_log": "Cherry Log",
 	"block.mmcherrytree.cherry_fence": "Cherry Fence",
+	"block.mmcherrytree.cherry_wood": "Cherry Wood",
+	"block.mmcherrytree.cherry_planks": "Cherry Planks",
 
 
 //ITEMS//
-	"item.mmcherrytree.cherry": "Cherry"
+	"item.mmcherrytree.cherry_fruit": "Cherry"
 
 }
