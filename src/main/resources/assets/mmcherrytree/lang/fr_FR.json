@@ -5,7 +5,10 @@
 	
 //BLOCKS//	
 	"block.mmcherrytree.cherry_log": "Bûche de Cerisier",
+	"block.mmcherrytree.cherry_log_fence": "Barrière en bois de Cerisier",
 	"block.mmcherrytree.cherry_fence": "Barrière de Cerisier",
+	"block.mmcherrytree.stripped_cherry_log": "Bûche de Cerisier écorcé",
+	"block.mmcherrytree.stripped_cherry_wood": "Bois de Cerisier écorcé",
 	"block.mmcherrytree.cherry_wood": "Bois de Cerisier",
 	"block.mmcherrytree.cherry_planks": "Planche de Cerisier",
 
