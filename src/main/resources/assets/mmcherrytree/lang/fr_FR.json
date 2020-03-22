@@ -1,5 +1,13 @@
 {
-	"block.mmcherrytree.cherry_log": "Buche de Cerisier",
+//OTHERS//	
+	"itemGroup.minimodseries": "MiniMod series",
+	
+	
+//BLOCKS//	
+	"block.mmcherrytree.cherry_log": "Bûche de Cerisier",
 
+
+//ITEMS//
 	"item.mmcherrytree.cherry": "Cerise"
+
 }
