@@ -1,6 +1,6 @@
 {
     "parent": "block/fence_inventory",
     "textures": {
-        "texture": "mmcherrytree:blocks/cherry_log"
+        "texture": "mmcherrytree:blocks/cherry_planks"
     }
 }
