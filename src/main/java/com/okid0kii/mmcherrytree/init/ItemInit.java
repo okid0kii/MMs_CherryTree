@@ -14,7 +14,7 @@ public class ItemInit {
 	 
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<> (ForgeRegistries.ITEMS, CherryTreeMod.MOD_ID);
 	
-	public static final RegistryObject<Item> CHERRY_FRUIT = ITEMS.register("cherry", () -> new Item(new Item.Properties().group(MMsItemGroup.instance).food(FoodItems.CHERRY_FRUIT)));
+	public static final RegistryObject<Item> CHERRY_FRUIT = ITEMS.register("cherry_fruit", () -> new Item(new Item.Properties().group(MMsItemGroup.instance).food(FoodItems.CHERRY_FRUIT)));
 			
 
 }
