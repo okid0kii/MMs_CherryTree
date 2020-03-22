@@ -64,8 +64,6 @@ public class CherryTreeMod {
 
 
 		LOGGER.debug("Registered BlockItems!");
-
-		
 	}
  
 
@@ -87,7 +85,7 @@ public class CherryTreeMod {
  }
 
 	public static class MMsItemGroup extends ItemGroup {
-		public static final ItemGroup instance = new MMsItemGroup(ItemGroup.GROUPS.length, "MiniMod series");
+		public static final ItemGroup instance = new MMsItemGroup(ItemGroup.GROUPS.length, "minimodseries");
 
 		private MMsItemGroup(int index, String label) {
 			super(index, label);
