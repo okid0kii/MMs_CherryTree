@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "mmcherrytree:blocks/stripped_cherry_log_top",
+		"side": "mmcherrytree:blocks/stripped_cherry_log"
+	}
+}
