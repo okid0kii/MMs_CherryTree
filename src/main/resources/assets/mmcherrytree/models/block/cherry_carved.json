@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_glazed_terracotta",
+    "textures": {
+        "particle": "mmcherrytree:blocks/cherry_carved",
+        "pattern": "mmcherrytree:blocks/cherry_carved"
+    }
+}
