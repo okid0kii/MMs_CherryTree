@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "mmcherrytree:block/cherry_carved" },
+        "facing=west": { "model": "mmcherrytree:block/cherry_carved", "y": 90 },
+        "facing=north": { "model": "mmcherrytree:block/cherry_carved", "y": 180 },
+        "facing=east": { "model": "mmcherrytree:block/cherry_carved", "y": 270 }
+    }
+}
