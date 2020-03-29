@@ -4,6 +4,7 @@ import com.okid0kii.mmcherrytree.CherryTreeMod;
 import com.okid0kii.mmcherrytree.CherryTreeMod.MMsItemGroup;
 import com.okid0kii.mmcherrytree.objects.items.FoodItems;
 
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
 import net.minecraftforge.fml.RegistryObject;
@@ -15,7 +16,7 @@ public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<> (ForgeRegistries.ITEMS, CherryTreeMod.MOD_ID);
 	
 	public static final RegistryObject<Item> CHERRY_FRUIT = ITEMS.register("cherry_fruit", () -> new Item(new Item.Properties().group(MMsItemGroup.instance).food(FoodItems.CHERRY_FRUIT)));
-			
 
+	public static final RegistryObject<Item> CHERRY_SAPLING = ITEMS.register("cherry_sapling", () -> new BlockItem(BlockInit.CHERRY_SAPLING.get(), new Item.Properties().group(MMsItemGroup.instance)));
 }
 
