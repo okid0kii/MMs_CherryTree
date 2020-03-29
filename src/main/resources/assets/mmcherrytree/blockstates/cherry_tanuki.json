@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mmcherrytree:block/cherry_tanuki" },
+       	"facing=south": { "model": "mmcherrytree:block/cherry_tanuki", "y": 180 },
+      	"facing=west": { "model": "mmcherrytree:block/cherry_tanuki", "y": 270 },
+      	"facing=east": { "model": "mmcherrytree:block/cherry_tanuki", "y": 90 }
+    }
+}
