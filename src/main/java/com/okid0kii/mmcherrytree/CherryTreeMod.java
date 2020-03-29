@@ -6,6 +6,9 @@ import org.apache.logging.log4j.Logger;
 import com.okid0kii.mmcherrytree.init.BlockInit;
 import com.okid0kii.mmcherrytree.init.ItemInit;
 
+import net.minecraft.block.Block;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -25,6 +28,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 
 
 @Mod("mmcherrytree")
@@ -35,7 +39,6 @@ public class CherryTreeMod {
 	public static final Logger LOGGER = LogManager.getLogger();
  	public static final String MOD_ID = "mmcherrytree";
 	public static CherryTreeMod instance;
- 
 
 		public CherryTreeMod() {
 			final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -44,10 +47,12 @@ public class CherryTreeMod {
 
 			ItemInit.ITEMS.register(modEventBus);
 			BlockInit.BLOCKS.register(modEventBus);
+			BlockInit.NO_BLOCKS.register(modEventBus);
 		
 
 			instance = this;
 			MinecraftForge.EVENT_BUS.register(this);
+			
 	}
  
 
@@ -64,9 +69,9 @@ public class CherryTreeMod {
 
 
 		LOGGER.debug("Registered BlockItems!");
+		
 	}
  
-
 		
  private void setup(final FMLCommonSetupEvent event)
  {
@@ -76,7 +81,7 @@ public class CherryTreeMod {
 
  private void doClientStuff(final FMLClientSetupEvent event) 
  {
-    
+	renderCutout(BlockInit.CHERRY_SAPLING.get());
  }
 
  public void onServerStarting(FMLServerStartingEvent event) 
@@ -84,7 +89,14 @@ public class CherryTreeMod {
      
  }
 
-	public static class MMsItemGroup extends ItemGroup {
+
+public static void renderCutout(Block block)
+	{
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}	
+ 
+
+public static class MMsItemGroup extends ItemGroup {
 		public static final ItemGroup instance = new MMsItemGroup(ItemGroup.GROUPS.length, "minimodseries");
 
 		private MMsItemGroup(int index, String label) {
