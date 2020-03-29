@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "mmcherrytree:blocks/cherry_sapling"
+    }
+}
