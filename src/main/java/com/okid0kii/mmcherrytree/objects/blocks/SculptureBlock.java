@@ -175,16 +175,13 @@ public class SculptureBlock extends Block implements IWaterLoggable {
 		builder.add(FACING, WATERLOGGED);
 	}
 	
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings("deprecation") //Keep the "water block" no change state
     public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos)
     {
         if(stateIn.get(WATERLOGGED))
         {
             worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
         }
-
-       // if(facing == Direction.DOWN && !this.isValidPosition(stateIn, worldIn, currentPos))
-         //   return Blocks.AIR.getDefaultState();
 
         return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
