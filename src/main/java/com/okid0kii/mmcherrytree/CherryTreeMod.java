@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.okid0kii.mmcherrytree.init.BlockInit;
 import com.okid0kii.mmcherrytree.init.ItemInit;
+import com.okid0kii.mmcherrytree.init.PaintingInit;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderType;
@@ -48,6 +49,7 @@ public class CherryTreeMod {
 			ItemInit.ITEMS.register(modEventBus);
 			BlockInit.BLOCKS.register(modEventBus);
 			BlockInit.NO_BLOCKS.register(modEventBus);
+			PaintingInit.PAINTING_TYPES.register(modEventBus);
 		
 
 			instance = this;
