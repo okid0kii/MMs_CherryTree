@@ -2,9 +2,9 @@ package com.okid0kii.mmcherrytree.objects.blocks;
 
 import java.util.stream.Stream;
 
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.IWaterLoggable;
 import net.minecraft.fluid.Fluids;
@@ -174,6 +174,7 @@ public class SculptureBlock extends Block implements IWaterLoggable {
 	protected void fillStateContainer(Builder<Block, BlockState> builder) {	
 		builder.add(FACING, WATERLOGGED);
 	}
+	
 	
 	@SuppressWarnings("deprecation") //Keep the "water block" no change state
     public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos)
