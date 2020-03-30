@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "planks",
+  "pattern": [
+    "MHM",
+    "W#W",
+    "SSS"
+  ],
+  "key": {
+    "M": {
+      "item": "mmcherrytree:cherry_planks"
+    },
+    "H": {
+      "item": "mmcherrytree:cherry_carved"
+    },
+    "W": {
+      "item": "mmcherrytree:cherry_wood"
+    },
+    "#": {
+      "item": "minecraft:armor_stand"
+    },
+    "S": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "mmcherrytree:cherry_tanuki"
+  }
+}
