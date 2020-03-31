@@ -29,7 +29,7 @@ public class ItemInit {
 			() -> new BlockItem(BlockInit.CHERRY_SAPLING.get(), new Item.Properties().group(MMsItemGroup.instance)));
 
 	
-	public static final RegistryObject<Item> MUSIC_DISC_CHERRY = ITEMS.register("music_disc_cherry",
-			() -> new MusicDiscItem(2, SoundInit.MUSIC_DISC_CHERRY, (new Item.Properties()).maxStackSize(1).group(MMsItemGroup.instance).rarity(Rarity.RARE)));
+	//public static final RegistryObject<Item> MUSIC_DISC_CHERRY = ITEMS.register("music_disc_cherry",
+		//	() -> new MusicDiscItem(100, SoundInit.MUSIC_DISC_CHERRY, (new Item.Properties()).maxStackSize(1).group(MMsItemGroup.instance).rarity(Rarity.RARE)));
 
 }
