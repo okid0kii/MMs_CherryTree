@@ -13,5 +13,4 @@ public class PaintingInit {
 	
 	public static final RegistryObject<PaintingType> CHERRY_PAINTING = PAINTING_TYPES.register("cherry_painting", () -> new PaintingType(96,48));
 	
-	
 }
