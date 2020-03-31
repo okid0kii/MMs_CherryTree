@@ -1,0 +1,11 @@
+{
+		"music_disc.cherry": {
+				"sounds": [
+						{
+								"name": "music/game/calm1",
+								"stream": true
+						}
+				]
+		}
+}
+		
