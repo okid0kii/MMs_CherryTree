@@ -15,7 +15,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -52,6 +51,7 @@ public class CherryTreeMod {
 			BlockInit.NO_BLOCKS.register(modEventBus);
 			PaintingInit.PAINTING_TYPES.register(modEventBus);
 			SoundInit.SOUNDS.register(modEventBus);
+
 			
 		
 
@@ -76,7 +76,7 @@ public class CherryTreeMod {
 		LOGGER.debug("Registered BlockItems!");
 		
 	}
- 
+
 		
  private void setup(final FMLCommonSetupEvent event)
  {
@@ -89,17 +89,17 @@ public class CherryTreeMod {
 	renderCutout(BlockInit.CHERRY_SAPLING.get());
  }
 
+  
  public void onServerStarting(FMLServerStartingEvent event) 
  {
      
  }
 
- 
-public static void renderCutout(Block block)
+ public static void renderCutout(Block block)
 	{
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}	
- 
+
 
 public static class MMsItemGroup extends ItemGroup {
 		public static final ItemGroup instance = new MMsItemGroup(ItemGroup.GROUPS.length, "minimodseries");
