@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "mmcherrytree:blocks/cherry__door_bottom",
+        "top": "mmcherrytree:blocks/cherry_door_top"
+    }
+}
