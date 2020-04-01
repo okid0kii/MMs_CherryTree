@@ -83,6 +83,7 @@ public class CherryTreeMod {
  {
 	renderCutout(BlockInit.CHERRY_SAPLING.get());
 	renderCutout(BlockInit.CHERRY_DOOR.get());
+	renderCutout(BlockInit.CHERRY_TRAPDOOR.get());
  }
 
   
