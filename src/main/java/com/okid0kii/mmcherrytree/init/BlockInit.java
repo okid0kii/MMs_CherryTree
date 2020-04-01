@@ -3,6 +3,7 @@ package com.okid0kii.mmcherrytree.init;
 import com.okid0kii.mmcherrytree.CherryTreeMod;
 import com.okid0kii.mmcherrytree.objects.blocks.SculptureBlock;
 import com.okid0kii.mmcherrytree.world.CherryTree;
+import com.okid0kii.mmcherrytree.objects.blocks.DoorBlockMod;
 import com.okid0kii.mmcherrytree.objects.blocks.SaplingBlockMod;
 
 
@@ -63,7 +64,7 @@ public class BlockInit {
 	
 
 //FURNITURE
-  //public static final RegistryObject<Block> CHERRY_DOOR = BLOCKS.register("cherry_door", () -> new DoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+  public static final RegistryObject<Block> CHERRY_DOOR = BLOCKS.register("cherry_door", () -> new DoorBlockMod(Block.Properties.from(Blocks.OAK_DOOR)));
   //public static final RegistryObject<Block> CHERRY_TRAP = BLOCKS.register("cherry_door", () -> new TrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
 	
 }  
