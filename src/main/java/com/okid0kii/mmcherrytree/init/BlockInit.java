@@ -52,6 +52,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> CHERRY_WOOD_STAIRS = BLOCKS.register("cherry_wood_stairs", () -> new StairsBlock(() -> BlockInit.CHERRY_WOOD.get().getDefaultState(), Block.Properties.from(Blocks.OAK_STAIRS)));
 
 	public static final RegistryObject<Block> CHERRY_WALL = BLOCKS.register("cherry_wall", () -> new WallBlock(Block.Properties.from(Blocks.OAK_PLANKS)));
+	public static final RegistryObject<Block> CHERRY_WOOD_WALL = BLOCKS.register("cherry_wood_wall", () -> new WallBlock(Block.Properties.from(Blocks.OAK_PLANKS))); 
 //VEGETABLES
 	public static final RegistryObject<Block> CHERRY_LEAVES = BLOCKS.register("cherry_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
 	public static final RegistryObject<Block> CHERRY_SAPLING = NO_BLOCKS.register("cherry_sapling", () -> new SaplingBlockMod(() -> new CherryTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
