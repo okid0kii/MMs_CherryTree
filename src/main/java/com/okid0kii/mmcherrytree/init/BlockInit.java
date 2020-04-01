@@ -9,8 +9,8 @@ import com.okid0kii.mmcherrytree.objects.blocks.SaplingBlockMod;
 import net.minecraft.block.Block;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FenceBlock;
+import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.GlazedTerracottaBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.LogBlock;
@@ -41,7 +41,9 @@ public class BlockInit {
 	
 //CONSTRUCTION BLOCKS
 	public static final RegistryObject<Block> CHERRY_WOOD_FENCE = BLOCKS.register("cherry_wood_fence", () -> new FenceBlock(Block.Properties.from(Blocks.OAK_FENCE)));
+	public static final RegistryObject<Block> CHERRY_WOOD_FENCE_GATE = BLOCKS.register("cherry_wood_fence_gate", () -> new FenceGateBlock(Block.Properties.from(Blocks.OAK_FENCE_GATE)));
 	public static final RegistryObject<Block> CHERRY_FENCE = BLOCKS.register("cherry_fence", () -> new FenceBlock(Block.Properties.from(Blocks.OAK_FENCE)));
+	public static final RegistryObject<Block> CHERRY_FENCE_GATE = BLOCKS.register("cherry_fence_gate", () -> new FenceGateBlock(Block.Properties.from(Blocks.OAK_FENCE_GATE)));
 	
 	public static final RegistryObject<Block> CHERRY_SLAB = BLOCKS.register("cherry_slab", () -> new SlabBlock(Block.Properties.from(Blocks.OAK_SLAB)));
 	public static final RegistryObject<Block> CHERRY_WOOD_SLAB = BLOCKS.register("cherry_wood_slab", () -> new SlabBlock(Block.Properties.from(Blocks.OAK_SLAB)));
@@ -61,6 +63,7 @@ public class BlockInit {
 
 //FURNITURE
   //public static final RegistryObject<Block> CHERRY_DOOR = BLOCKS.register("cherry_door", () -> new DoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+  //public static final RegistryObject<Block> CHERRY_TRAP = BLOCKS.register("cherry_door", () -> new TrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
 	
 }  
 
