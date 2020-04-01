@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence_gate",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:stick"
+    },
+    "#": {
+      "item": "mmcherrytree:cherry_planks"
+    }
+  },
+  "result": {
+    "item": "mmcherrytree:cherry_fence_gate",
+    "count": 3
+  }
+}
