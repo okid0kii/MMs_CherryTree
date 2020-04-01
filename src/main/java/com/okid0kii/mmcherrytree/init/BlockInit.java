@@ -9,12 +9,14 @@ import com.okid0kii.mmcherrytree.objects.blocks.SaplingBlockMod;
 import net.minecraft.block.Block;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.GlazedTerracottaBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.LogBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.block.material.MaterialColor;
 
 import net.minecraftforge.fml.RegistryObject;
@@ -47,6 +49,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> CHERRY_STAIRS = BLOCKS.register("cherry_stairs", () -> new StairsBlock(() -> BlockInit.CHERRY_PLANKS.get().getDefaultState(), Block.Properties.from(Blocks.OAK_STAIRS)));
 	public static final RegistryObject<Block> CHERRY_WOOD_STAIRS = BLOCKS.register("cherry_wood_stairs", () -> new StairsBlock(() -> BlockInit.CHERRY_WOOD.get().getDefaultState(), Block.Properties.from(Blocks.OAK_STAIRS)));
 
+	public static final RegistryObject<Block> CHERRY_WALL = BLOCKS.register("cherry_wall", () -> new WallBlock(Block.Properties.from(Blocks.OAK_PLANKS)));
 //VEGETABLES
 	public static final RegistryObject<Block> CHERRY_LEAVES = BLOCKS.register("cherry_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
 	public static final RegistryObject<Block> CHERRY_SAPLING = NO_BLOCKS.register("cherry_sapling", () -> new SaplingBlockMod(() -> new CherryTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
@@ -56,6 +59,9 @@ public class BlockInit {
 	public static final RegistryObject<Block> CHERRY_TANUKI = BLOCKS.register("cherry_tanuki", () -> new SculptureBlock(Block.Properties.from(Blocks.OAK_PLANKS)));
 	
 
+//FURNITURE
+  //public static final RegistryObject<Block> CHERRY_DOOR = BLOCKS.register("cherry_door", () -> new DoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+	
 }  
 
 	
