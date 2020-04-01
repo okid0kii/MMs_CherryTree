@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-	"mmcherrytree:cherry_wall"
-	
+	"mmcherrytree:cherry_wall",
+	"mmcherrytree:cherry_wood_wall"	
   ]
 }
