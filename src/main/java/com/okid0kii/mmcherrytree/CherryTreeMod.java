@@ -82,6 +82,7 @@ public class CherryTreeMod {
  private void doClientStuff(final FMLClientSetupEvent event) 
  {
 	renderCutout(BlockInit.CHERRY_SAPLING.get());
+	renderCutout(BlockInit.CHERRY_DOOR.get());
  }
 
   
