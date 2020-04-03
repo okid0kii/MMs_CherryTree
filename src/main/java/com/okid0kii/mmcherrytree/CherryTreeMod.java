@@ -109,7 +109,7 @@ public static class MMsItemGroup extends ItemGroup {
 		
 	@Override
 	public ItemStack createIcon() {
-		return new ItemStack(ItemInit.CHERRY_FRUIT.get());
+		return new ItemStack(ItemInit.CHERRY_SAPLING.get());
 	}
   }
 }
