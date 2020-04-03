@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "#I#",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "mmcherrytree:cherry_planks"
+    }
+  },
+  "result": {
+    "item": "mmcherrytree:cherry_glass",
+    "count": 6
+  }
+}
