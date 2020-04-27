@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-	"mmcherrytree:cherry_planks"
+	"mmcherrytree:cherry_planks",
+	"mmcherrytree:cherry_carved"
 	
   ]
 }
