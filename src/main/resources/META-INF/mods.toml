@@ -35,7 +35,7 @@ displayURL="http://example.com/" #optional
 logoFile="examplemod.png" #optional
 
 # A text field displayed in the mod UI
-credits="Thanks to TurtyWurty - Mr Pineapple - Vazkii" #optional
+credits="Thanks to TurtyWurty - Mr Pineapple" #optional
 
 # A text field displayed in the mod UI
 authors="okid0kii" #optional
