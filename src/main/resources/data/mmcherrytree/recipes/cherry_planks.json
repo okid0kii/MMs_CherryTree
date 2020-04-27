@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "mmcherrytree:cherry_logs"
+      "item": "mmcherrytree:cherry_log"
     }
   ],
   "result": {
