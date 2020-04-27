@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mmcherrytree:cherry_log",
+    "mmcherrytree:cherry_wood",
+    "mmcherrytree::stripped_cherry_log",
+    "mmcherrytree::stripped_cherry_wood"
+  ]
+}
